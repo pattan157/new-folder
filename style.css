@@ -1,0 +1,248 @@
+/* header */
+header{
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    border-bottom: double 1px black;
+    background-color: white;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu ul li{
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    color: red;
+}
+#made_site, #fuature, #about, #skill{
+    padding-top: 30px;
+}
+    /* main */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+}
+h1{
+    font-family: 'Srisakdi', cursive;
+    font-size: 150px;
+    text-align: center;
+    animation: bigger 3s 1s;
+}
+@keyframes bigger{
+    from{
+        font-size: 1px;
+    }
+    to{
+        font-size: 150px;
+    }
+}
+
+main p{
+    font-family: 'Srisakdi', cursive;
+    font-size: x-large;
+}
+    /* MADE SITE */
+#made_site{
+    background-color: #f8f8f8;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family: 'Srisakdi', cursive;
+    font-size: 100px;
+    padding: 10px;
+}
+p{
+    font-size: large;
+    letter-spacing: 0.1em;
+}
+#made_site .folder .contents a img:hover{
+    opacity: 0.6; 
+    filter: brightness(110%);
+}
+    /* fuature */
+#fuature{
+    background-color: white;
+}
+.folder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 50px ;
+}
+.contents a img{
+    margin-left: 20px;
+    width: 70%;
+    height: 250px;
+}
+.folder>img{
+    width: 250px;
+    height: auto;
+}
+.explannation>.name_site{
+    font-size: xx-large;
+}
+.explannation>.tantou{
+    font-size: larger;
+}
+
+    /* about */
+#about{
+    background-color: #f8f8f8;
+}
+#about>.folder>img{
+    border-radius: 50%;
+}
+#about>.folder>p{
+    margin-left: 80px;
+}
+
+    /* SKILL */
+#skill{
+    background-color: white;
+}
+.skill_lv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    /* 画像のサイズ合わせ */
+.skill_lv .HTML5 .image img{
+    width: 70%;
+    height: 250px;
+}
+
+.skill_lv .CSS3 .image img{
+    width: 70%;
+    height: 250px;
+}
+
+.skill_lv .JAVA .image img{
+    width: 70%;
+    height: 250px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+
+    /* 星の場所・色つけ */
+.rate{
+    display:flex;
+}
+
+.H_one, .H_two, .C_one, .C_two, .J_one{
+    color: darkorange;
+} 
+
+/* contct部分 */
+#contact{
+    background-color: #f8f8f8;
+}
+footer .main{
+    display: flex;
+    align-items: center;
+}
+#contact h2{
+    font-size:20px;
+    display: block;
+}
+input{
+    margin: 0 0 0 auto;
+    vertical-align: bottom;
+}
+textarea{
+    margin: 0 0 0 auto;
+    vertical-align: bottom;
+}
+
+@media screen and (max-width:780px){
+    /* 初めのページ */
+    h1{
+        text-align: center;
+        font-size: 50px;
+        animation: appear 6s ease-in 0s 1 ;
+    }
+    @keyframes appear{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    /* made-site */
+    h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    .contents a img{
+        width: 70%;
+        height: auto;
+    }
+    .contents a p{
+        font-size:smaller ;
+    }
+    /* fuature */
+    #fuature{
+        background-image: url(/IMG/IMG_1345.jpg);
+        background-size: cover;
+        color: white;
+        margin-top: 5px;
+    
+    }
+    .folder img{
+        width: 0%;
+        height: 0%;
+    }
+
+    /* about */
+    #about{
+        background-image: url(/IMG/TCQKVD607-U0183TDKWUA-4f427509f8fb-512.jpg);
+        color: white;
+        margin-top: 5px;
+    }
+
+    /* SKILL */
+    #skill{
+        margin-bottom: 30px;
+    }
+    .skill_lv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #skill img{
+        width: 80px;
+        height: 100px;
+    }
+
+    /* contact */
+    #contact{
+        background-color: #f8f8f8;
+    }
+    input{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+}
