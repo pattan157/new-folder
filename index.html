@@ -160,7 +160,22 @@
         </footer>
     </section>
 <script>
-    ScrollReveal().reveal('.anime')
+    ScrollReveal().reveal('.anime',{
+        duration: 1600,
+        viewFactor: 0.3,
+        delay: 10,
+        opacity: 0,
+        reset: true,
+    });
+
+    ScrollReveal().reveal('.title',{
+        duration: 1600,
+        viewFactor: 0.3,
+        delay: 10,
+        duration: ease,
+        opacity: 0,
+        origin: left,
+    });
 </script>
 </body>
 </html>
